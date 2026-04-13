@@ -20,6 +20,6 @@ module list
 
 
 # Run script 
-nnUNetv2_train Dataset001_Brain_T2 3d_fullres 1 -p nnUNetPlans  
+nnUNetv2_train Dataset002_Brain_T2 3d_fullres 1 -p nnUNetPlans  
 
 # Add --c if continuing
