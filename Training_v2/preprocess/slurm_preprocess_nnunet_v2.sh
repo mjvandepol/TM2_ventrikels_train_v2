@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=prep
 #SBATCH --partition=short
-#SBATCH --time=2:00:00
+#SBATCH --time=4:00:00
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=16
 #SBATCH --output=logs_preprocess/preprocess_%j.out
@@ -18,4 +18,4 @@ module list
 
 
 # Run script 
-nnUNetv2_plan_and_preprocess -d Dataset002_Brain_T2 --verify_dataset_integrity -c 3d_fullres
+nnUNetv2_plan_and_preprocess -d 2 --verify_dataset_integrity -c 3d_fullres
