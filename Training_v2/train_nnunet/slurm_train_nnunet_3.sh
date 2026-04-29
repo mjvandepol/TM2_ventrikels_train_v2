@@ -4,8 +4,8 @@
 #SBATCH --time=52:00:00
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=8
-#SBATCH --output=logs_train/train_fold3_%j.out
-#SBATCH --error=logs_train/train_fold3_%j.err
+#SBATCH --output=logs_train_T1/train_fold3_%j.out
+#SBATCH --error=logs_train_T1/train_fold3_%j.err
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=m.j.vandepol@erasmusmc.nl
 
@@ -20,6 +20,6 @@ module list
 
 
 # Run script 
-nnUNetv2_train Dataset002_Brain_T2 3d_fullres 3 -p nnUNetPlans 
+nnUNetv2_train Dataset003_Brain_T1 3d_fullres 3 -p nnUNetPlans 
 
 # Add --c if continuing
