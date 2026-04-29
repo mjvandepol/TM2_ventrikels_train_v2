@@ -18,6 +18,11 @@ module load Python/3.11.5-GCCcore-13.2.0
 source ~/venv/cranio_env/bin/activate
 module list
 
+# nnU-Net paths
+export nnUNet_raw="/data/scratch/r116411/data/nnUNet_raw"
+export nnUNet_preprocessed="/data/scratch/r116411/data/nnUNet_preprocessed"
+export nnUNet_results="/data/scratch/r116411/data/nnUNet_results"
+
 
 # Run script 
 nnUNetv2_train Dataset003_Brain_T1 3d_fullres 3 -p nnUNetPlans 

@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/trinity/home/r116411/venv/cranio_env/bin/nnUNetv2_plan_and_preprocess", line 6, in <module>
+    sys.exit(plan_and_preprocess_entry())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/trinity/home/r116411/repositories/nnUNet/nnunetv2/experiment_planning/plan_and_preprocess_entrypoints.py", line 183, in plan_and_preprocess_entry
+    extract_fingerprints(args.d, args.fpe, args.npfp, args.verify_dataset_integrity, args.clean, args.verbose,
+  File "/trinity/home/r116411/repositories/nnUNet/nnunetv2/experiment_planning/plan_and_preprocess_api.py", line 51, in extract_fingerprints
+    extract_fingerprint_dataset(d, fingerprint_extractor_class, num_processes, check_dataset_integrity, clean,
+  File "/trinity/home/r116411/repositories/nnUNet/nnunetv2/experiment_planning/plan_and_preprocess_api.py", line 31, in extract_fingerprint_dataset
+    verify_dataset_integrity(join(nnUNet_raw, dataset_name), num_processes)
+  File "/trinity/home/r116411/repositories/nnUNet/nnunetv2/experiment_planning/verify_dataset_integrity.py", line 125, in verify_dataset_integrity
+    assert isfile(join(folder, "dataset.json")), f"There needs to be a dataset.json file in folder, folder={folder}"
+AssertionError: There needs to be a dataset.json file in folder, folder=/data/scratch/r116411/data/nnUNet_raw/Dataset003_Brain_T1
