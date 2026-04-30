@@ -1,0 +1,23 @@
+/trinity/home/r116411/venv/cranio_env/lib/python3.11/site-packages/torch/_inductor/lowering.py:7007: UserWarning: 
+Online softmax is disabled on the fly since Inductor decides to
+split the reduction. Cut an issue to PyTorch if this is an
+important use case and you want to speed it up with online
+softmax.
+
+  warnings.warn(
+/trinity/home/r116411/venv/cranio_env/lib/python3.11/site-packages/torch/_inductor/lowering.py:7007: UserWarning: 
+Online softmax is disabled on the fly since Inductor decides to
+split the reduction. Cut an issue to PyTorch if this is an
+important use case and you want to speed it up with online
+softmax.
+
+  warnings.warn(
+/trinity/home/r116411/venv/cranio_env/lib/python3.11/site-packages/torch/_inductor/lowering.py:7007: UserWarning: 
+Online softmax is disabled on the fly since Inductor decides to
+split the reduction. Cut an issue to PyTorch if this is an
+important use case and you want to speed it up with online
+softmax.
+
+  warnings.warn(
+/trinity/home/r116411/repositories/nnUNet/nnunetv2/training/nnUNetTrainer/nnUNetTrainer.py:1137: RuntimeWarning: invalid value encountered in scalar divide
+  global_dc_per_class = [i for i in [2 * i / (2 * i + j + k) for i, j, k in zip(tp, fp, fn)]]
